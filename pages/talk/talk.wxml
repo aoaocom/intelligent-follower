@@ -1,0 +1,47 @@
+<!--pages/talk/talk.wxml-->
+<!--<text>pages/talk/talk.wxml</text>-->
+<view class="main">
+<image class="background" src="http://m.qpic.cn/psc?/V52rE9n72p9ICb1FfcgI3wp7Xj0vkvyl/ruAMsa53pVQWN7FLK88i5mrAyydFH3CjoigzlmsAEDa2iTYNS2S3LCb*SCkhRNCS9y9bSh3jYMHlLU8nn.hAkYAPxPNtmGVGWfy07n*pRHA!/b&bo=OASABwAAAAABB5s!&rf=viewer_4" mode="aspectFill">
+  </image>
+
+  <scroll-view upper-threshold="0" bindscrolltoupper="scrolltoupper" class="scroll-wrap" scroll-into-view="translate-fake" scroll-y="{{true}}" enhanced="{{true}}" style="width: 750rpx; height: 1034rpx; display: block; box-sizing: border-box">
+  <view class="unit-view">
+    <view class="text">
+      <image class="header" src="https://img.zcool.cn/community/01f555554254350000019ae963d7a6.jpg@1280w_1l_2o_100sh.jpg"></image>
+      <!--https://res.wx.qq.com/mmspraiweb_node/dist/static/miniprogrampageImages/talk/leftHeader.png-->
+      <view class="leftView">
+        <text>你想和我聊些什么？</text>
+      </view>
+    </view>
+  </view>
+
+  <block wx:for="{{messageList}}">
+    <view class="unit-view" id="tx-item-{{index}}">
+      <view class="queryCard">
+        <image class="userHeader" src="https://ts1.cn.mm.bing.net/th/id/R-C.f0e60c8b2c191a8eb0a1490212dd78e1?rik=hp1fkir6YcJzoQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fpixelresort%2fwall-e%2f512%2fEVE-icon.png&ehk=%2fW1ehj6k8aF5qyC01O%2fFVPakeYGD5UPuL40RcjkeNIg%3d&risl=&pid=ImgRaw&r=0"></image>
+        <!--https://res.wx.qq.com/mmspraiweb_node/dist/static/miniprogrampageImages/talk/rightHeader.png-->
+        <view class="rightView">
+          <text>{{item.tx}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="unit-view" id="rx-item-{{index}}">
+      <view class="text">
+        <image class="header" src="https://img.zcool.cn/community/01f555554254350000019ae963d7a6.jpg@1280w_1l_2o_100sh.jpg"></image>
+        <view class="leftView">
+          <view wx:if="{{item.rx == 'loading...'}}" class="weui-loading"></view>
+          <text wx:else="">{{item.rx}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+<view class="bottom-operate-view">
+  <view class="input-btn-inputView">
+    <input model:value="{{inputValue}}" class="input-view" placeholder="请输入" placeholder-style="color: #c4c5c7" type="text" selection-start="-1" selection-end="-1" cursor="-1"></input>
+  </view>
+  <button size="mini" type="primary" style="height:40px;line-height:40px;margin-left:5px;" bindtap="sendMessage">发送</button>
+</view>
+
+</view>

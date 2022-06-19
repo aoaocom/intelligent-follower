@@ -1,0 +1,32 @@
+<view class="baibian">  <!--class="content"  class="background"-->
+<image class="background" src="http://m.qpic.cn/psc?/V52rE9n72p9ICb1FfcgI3wp7Xj0vkvyl/ruAMsa53pVQWN7FLK88i5iwHu5nk9p0q4mGeBBN1R2sYMxmqsbMXSZv3JcZLAbzNn1V59895f3l9JNaeMmQV7D.ry.MKuvmbtiMLIEwM6jU!/b&bo=OASABwAAAAABB5s!&rf=viewer_4" mode="aspectFill" ></image>
+
+<button bindtap="getdata" style="width: 570rpx; height: 94rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx; position: relative" style="color: #300505; position: relative; left: 0rpx; top: -33rpx; width: 432rpx; height: 146rpx; display: block; box-sizing: border-box" class="goodbutton">点击获取所有通讯录名单</button>
+<!-- 数组遍历加循环for-->
+<view wx:for="{{dataobj}}">{{item.name}} - {{item.phone}} - {{item.telephone}}</view>
+<!--插入-->
+<!--<button type="primary" bindtap="addData">插入一条电话号码</button>-->
+<view class="gaibian">请输入电话号码</view>
+<!--表单插入-->
+<form bindsubmit="btnSub" style="width: 750rpx; height: 455rpx; display: inline; box-sizing: content-box">
+<input name="name" placeholder-class="phcolor" placeholder="请输入姓名"></input>
+<input name="phone" placeholder-class="phcolor" placeholder="请输入手机号码"></input>
+<input name="telephone" placeholder-class="phcolor" placeholder="请输入家中座机号码" style="width: 746rpx; height: 52rpx; display: block; box-sizing: border-box"></input>
+
+<button form-type="submit" style="position: relative; left: -3rpx; top: 368rpx" class="huoqu" style="color: #300505; width: 350rpx; height: 94rpx; display: block; box-sizing: border-box; left: 0rpx; top: 19rpx" class="goodbutton">储存</button>
+
+<button form-type="reset" style="position: relative; left: 0rpx; top: 174rpx" style="color: #300505; position: relative; left: 0rpx; top: -19rpx; width: 350rpx; height: 94rpx; display: block; box-sizing: border-box"class="goodbutton">储存下一个</button>
+</form>
+
+<button class="publish" disabled="{{disabled}}" bindtap='submit' style="position: relative; left: 0rpx; top: 22rpx" class="goodbutton">
+  <navigator url="/pages/changenumber/changenumber"
+  hover-class="navigator-hover"  style="width: 294rpx; height: 107rpx; display: block; box-sizing: border-box" class="huoqu">点击修改其他电话号码</navigator>
+</button>
+
+<button class="publish" disabled="{{disabled}}" bindtap='submit' style="position: relative; left: 0rpx; top: -7rpx"class="goodbutton">
+  <navigator url="/pages/frontpage/frontpage"
+  hover-class="navigator-hover"  style="width: 317rpx; height: 57rpx; display: block; box-sizing: border-box"class="huoqu">点击回到主界面</navigator>
+</button>
+</view>
+
+

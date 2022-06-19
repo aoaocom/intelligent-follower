@@ -1,0 +1,23 @@
+<view class="content" style="width: 750rpx; height: 795rpx; display: block; box-sizing: border-box">
+<image class="background" src="http://m.qpic.cn/psc?/V52rE9n72p9ICb1FfcgI3wp7Xj0vkvyl/ruAMsa53pVQWN7FLK88i5pEO7F*q9vxnP1BkPsYJpHzkfCuXWOsIVtlQ5hkkqmPTBcZ4kbdBZlnK85N1nF7*lXWWcuCLmGojGv6kFZg6l.A!/b&bo=OASABwAAAAABB5s!&rf=viewer_4" mode="aspectFill" ></image>
+
+<view style="color:#f5efef">在此修改人员姓名和电话号码</view>
+<!--表单修改-->
+<form bindsubmit="btnSub">
+<input name="name" placeholder="请输入姓名"></input>
+<input name="phone" placeholder="请输入手机号码"></input>
+<input name="telephone" placeholder="请输入家中座机号码"></input>
+<button type="primary" bindtap="upDate" style="color:#828282" class="goodbutton">提交修改</button>
+<!--删除表单-->
+<input name="name" placeholder="请输入姓名" bindinput="deleteName"></input>
+<button type="primary" bindinput="deleteName" style="color:#828282" class="goodbutton">删除</button>
+<!--<input name="phone" placeholder="请输入手机号码"></input>
+<input name="telephone" placeholder="请输入家中座机号码"></input>
+<button type="primary" bindtap="Delete">删除联系人</button>-->
+</form>
+
+<button class="publish" disabled="{{disabled}}" bindtap='submit' style="position: relative; left: 0rpx; top: 392rpx" class="goodbutton">
+  <navigator url="/pages/index/index"
+  hover-class="navigator-hover"  style="width: 333rpx; height: 52rpx; display: block; box-sizing: border-box" class="ziti">完成修改 点击返回</navigator>
+</button>
+</view>

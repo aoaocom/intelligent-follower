@@ -1,0 +1,133 @@
+/* pages/talk/talk.wxss */
+
+  
+  .scroll-wrap {
+    height: calc(100vh - 90px);
+    width: 100vw;
+    overflow: hidden;
+    z-index: 20;
+  }
+  
+  .unit-view {
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .text {
+    padding-bottom: 10px;
+    display: flex;
+  }
+  
+  .header {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .leftView {
+    margin: 10px 0;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(48, 49, 51, 1);
+    border-radius: 5px;
+    max-width: calc(96vw - 120px);
+    font-size: 13px;
+    line-height: 18px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: justify;
+    box-shadow: 0px 3px 8px 0px rgba(219, 235, 249, .51);
+    border: 1px solid rgba(213, 226, 254, 1);
+  }
+  
+  .queryCard {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .userHeader {
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .rightView {
+    margin: 10px 0;
+    padding: 10px 18px;
+    background: rgba(231, 244, 255, 1);
+    box-shadow: 0px 3px 8px 0px rgba(219, 235, 249, .51);
+    font-size: 13px;
+    color: rgba(48, 49, 51, 1);
+    line-height: 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(213, 226, 254, 1);
+    max-width: calc(96vw - 120px);
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  
+  .bottom-operate-view {
+    width: 100%;
+    height: 90px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 7px 20px 0;
+    box-sizing: border-box;
+  }
+  
+  .input-btn-inputView {
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0px 8px 32px 3px rgba(212, 212, 212, 0.19);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-view {
+    padding: 5px 10px;
+    font-size: 15px;
+    height: 30px;
+    width: 100%;
+  }
+  
+  .weui-loading {
+    font-size: 10px;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    animation: f 1s steps(12) infinite;
+    background: transparent url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'%3E%3Cpath fill='none' d='M0 0h100v100H0z'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23E9E9E9' rx='5' ry='5' transform='translate(0 -30)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23989697' rx='5' ry='5' transform='rotate(30 105.98 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%239B999A' rx='5' ry='5' transform='rotate(60 75.98 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23A3A1A2' rx='5' ry='5' transform='rotate(90 65 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23ABA9AA' rx='5' ry='5' transform='rotate(120 58.66 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23B2B2B2' rx='5' ry='5' transform='rotate(150 54.02 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23BAB8B9' rx='5' ry='5' transform='rotate(180 50 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23C2C0C1' rx='5' ry='5' transform='rotate(-150 45.98 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23CBCBCB' rx='5' ry='5' transform='rotate(-120 41.34 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23D2D2D2' rx='5' ry='5' transform='rotate(-90 35 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23DADADA' rx='5' ry='5' transform='rotate(-60 24.02 65)'/%3E%3Crect width='7' height='20' x='46.5' y='40' fill='%23E2E2E2' rx='5' ry='5' transform='rotate(-30 -5.98 65)'/%3E%3C/svg%3E") no-repeat;
+    background-size: 100%
+  }
+  
+  @keyframes f {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg)
+    }
+  
+    to {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn)
+    }
+  }
+  page{
+    height:100%;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1;
+  }
+  

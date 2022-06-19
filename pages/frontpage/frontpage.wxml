@@ -1,0 +1,21 @@
+<view class="baibian">   <!--class="container"   class="content" class="background"-->
+  <image class="background" src="http://m.qpic.cn/psc?/V52rE9n72p9ICb1FfcgI3wp7Xj0vkvyl/ruAMsa53pVQWN7FLK88i5pEO7F*q9vxnP1BkPsYJpHzkfCuXWOsIVtlQ5hkkqmPTBcZ4kbdBZlnK85N1nF7*lXWWcuCLmGojGv6kFZg6l.A!/b&bo=OASABwAAAAABB5s!&rf=viewer_4" mode="aspectFill" >
+  </image>
+
+
+<button class="publish" disabled="{{disabled}}" bindtap='submit' style="position: relative; left: 0rpx; top: 284rpx; width: 432rpx; height: 97rpx; display: block; box-sizing: border-box" class="goodbutton">
+  <navigator url="/pages/getweather/getweather"
+  hover-class="navigator-hover"  style="width: 319rpx; height: 66rpx; display: block; box-sizing: border-box" class="gaibian">点击获取今日天气</navigator>
+</button>
+
+
+<button class="publish" disabled="{{disabled}}" bindtap='submit' style="position: relative; left: 0rpx; top: 289rpx"class="goodbutton">
+  <navigator url="/pages/index/index"
+  hover-class="navigator-hover"  style="width: 326rpx; height: 59rpx; display: block; box-sizing: border-box"class="gaibian">点击查看电话本</navigator>
+</button>
+
+<button class="publish" disabled="{{disabled}}" bindtap='submit' style="position: relative; left: 0rpx; top: 289rpx"class="goodbutton">
+  <navigator url="/pages/talk/talk"
+  hover-class="navigator-hover"  style="width: 338rpx; height: 64rpx; display: block; box-sizing: border-box" class="gaibian">点击进入聊天界面</navigator>
+</button>
+</view>
